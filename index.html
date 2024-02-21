@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Recognition Demo</title>
+  <style>
+    body {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="file"] {
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+  </style>
+</head>
+<body>
+  <h1>Image Recognition Demo</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="image">Choose an image:</label>
+    <input type="file" id="image" name="image" accept="image/*" required>
+    <button type="submit">Upload and Analyze</button>
+  </form>
+</body>
+</html>
